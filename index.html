@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다섯 용의 반려 후보가 되었다 · 창천오국 안내서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;900&family=Gowun+Dodum&display=swap" rel="stylesheet">
+<style>
+/* PDF 안전: color-mix 미사용, 배경 인쇄 강제, 카드 분할 방지 */
+*{
+  box-sizing:border-box;margin:0;padding:0;word-break:keep-all;overflow-wrap:break-word;
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#F4F0E6;
+  color:#3A352C;
+  font-family:"Gowun Dodum",sans-serif;
+  line-height:1.85;
+}
+img{display:block;max-width:100%;}
+.page{
+  width:100%;max-width:960px;margin:0 auto;
+  background:#FCFAF4;
+  border-left:1px solid #E9E2D2;
+  border-right:1px solid #E9E2D2;
+}
+
+/* ============ 표제 ============ */
+.hero{
+  padding:5rem 1.6rem 4rem;
+  text-align:center;
+  border-bottom:1px solid #E9E2D2;
+}
+.hero-eyebrow{font-size:.7rem;letter-spacing:.55em;text-indent:.55em;color:#9C8340;}
+.hero-title{
+  margin-top:1.3rem;
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:2.7rem;line-height:1.4;color:#2C2820;letter-spacing:.04em;
+}
+.hero-hanja{
+  display:block;margin-top:.9rem;
+  font-family:"Noto Serif KR",serif;font-weight:300;
+  font-size:1rem;letter-spacing:.6em;text-indent:.6em;color:#9C8340;
+}
+.hero-rule{width:52px;height:1px;background:#C9B67E;margin:2rem auto 1.6rem;}
+.hero-tag{
+  max-width:480px;margin:0 auto;
+  font-family:"Noto Serif KR",serif;font-weight:400;
+  font-size:.92rem;line-height:2.1;color:#6E6552;
+}
+.hero-tag b{color:#2C2820;font-weight:400;}
+.star-row{display:flex;justify-content:center;gap:.9rem;margin-top:2rem;}
+.star-row i{width:6px;height:6px;border-radius:50%;}
+
+/* ============ 공통 섹션 ============ */
+.section{padding:4rem 1.6rem;}
+.section+.section{border-top:1px solid #E9E2D2;}
+.sec-head{text-align:center;margin-bottom:2.6rem;}
+.sec-num{
+  display:block;
+  font-family:"Noto Serif KR",serif;font-weight:300;
+  font-size:1rem;color:#9C8340;letter-spacing:.3em;text-indent:.3em;
+}
+.sec-title{
+  margin-top:.5rem;
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:1.55rem;color:#2C2820;letter-spacing:.08em;
+}
+.sec-head::after{
+  content:"";display:block;
+  width:32px;height:1px;background:#C9B67E;
+  margin:1.2rem auto 0;
+}
+.inner{max-width:720px;margin:0 auto;}
+.sub-label{
+  width:fit-content;margin:3rem auto 1.4rem;
+  font-family:"Noto Serif KR",serif;font-weight:600;font-size:.92rem;
+  color:#9C8340;letter-spacing:.28em;text-indent:.28em;
+}
+.sub-label:first-child{margin-top:0;}
+.sub-label::before,.sub-label::after{content:"·";margin:0 .55em;color:#D8CCAC;}
+
+/* ============ 정보 행 ============ */
+.info-rows{border-top:1px solid #3A352C;}
+.info-row{
+  display:flex;gap:1.4rem;
+  padding:.95rem .2rem;
+  border-bottom:1px solid #E9E2D2;
+  font-size:.88rem;
+}
+.info-row dt{
+  flex:0 0 96px;
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  color:#9C8340;font-size:.82rem;padding-top:.1rem;letter-spacing:.12em;
+}
+.info-row dd{flex:1;color:#4A4437;}
+.info-row dd b{font-weight:400;color:#A65B43;}
+
+/* ============ 태그 ============ */
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;margin-top:2rem;}
+.tag{
+  font-size:.72rem;padding:.28rem .7rem;
+  border:1px solid #E9E2D2;border-radius:99px;
+  background:#FCFAF4;color:#6E6552;
+}
+
+/* ============ 연표 ============ */
+.timeline{border-left:1px solid #D8CCAC;margin-left:.3rem;}
+.tl-item{position:relative;padding:0 0 1.4rem 1.6rem;}
+.tl-item:last-child{padding-bottom:.2rem;}
+.tl-item::before{
+  content:"";position:absolute;left:-4px;top:.55em;
+  width:7px;height:7px;border-radius:50%;background:#C9B67E;
+}
+.tl-item.now::before{background:#A65B43;}
+.tl-item b{
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:.86rem;color:#8A7340;letter-spacing:.06em;
+}
+.tl-item.now b{color:#A65B43;}
+.tl-item p{font-size:.85rem;color:#4A4437;margin-top:.15rem;}
+
+/* ============ 법칙 ============ */
+.rule-list{counter-reset:rule;border-top:1px solid #3A352C;}
+.rule{
+  display:flex;gap:1.2rem;
+  padding:1rem .2rem;
+  border-bottom:1px solid #E9E2D2;
+  font-size:.87rem;color:#4A4437;
+}
+.rule::before{
+  counter-increment:rule;
+  content:counter(rule);
+  flex:0 0 auto;
+  font-family:"Noto Serif KR",serif;font-weight:300;
+  color:#9C8340;font-size:1.1rem;line-height:1.5;
+}
+.rule b{font-weight:400;color:#A65B43;}
+
+/* ============ 오국 ============ */
+.nation{
+  margin-top:1.4rem;
+  border:1px solid #E9E2D2;
+  background:#FFFEFA;
+  break-inside:avoid;page-break-inside:avoid;
+}
+.nation:first-of-type{margin-top:0;}
+.nation-head{
+  display:flex;align-items:baseline;gap:.85rem;flex-wrap:wrap;
+  padding:1rem 1.3rem .85rem;
+  border-bottom:1px solid #F0EADB;
+}
+.nation-head .chip{flex:0 0 auto;width:7px;height:7px;border-radius:50%;transform:translateY(-2px);}
+.nation-head em{
+  font-style:normal;font-family:"Noto Serif KR",serif;
+  font-weight:600;font-size:1.12rem;letter-spacing:.05em;
+}
+.nation-head small{font-size:.71rem;color:#9A9078;letter-spacing:.08em;}
+.nation-body{padding:1rem 1.3rem 1.2rem;}
+.nation-body p{font-size:.84rem;color:#4A4437;}
+.nation-facts{margin-top:.8rem;display:flex;flex-direction:column;gap:.3rem;}
+.nation-facts span{font-size:.78rem;color:#6E6552;}
+.nation-facts span b{
+  font-weight:600;color:#8A7340;
+  font-family:"Noto Serif KR",serif;font-size:.74rem;
+  margin-right:.5rem;letter-spacing:.1em;
+}
+
+/* ============ 캐릭터 ============ */
+.dragon{
+  margin-top:2.4rem;
+  border:1px solid #E9E2D2;
+  background:#FFFEFA;
+  break-inside:avoid;page-break-inside:avoid;
+}
+.dragon:first-of-type{margin-top:0;}
+.portrait{
+  position:relative;width:100%;
+  aspect-ratio:3/2;min-height:220px;
+  overflow:hidden;background:#F0EADB;
+  border-bottom:1px solid #E9E2D2;
+}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+.portrait-mark{
+  position:absolute;right:1.2rem;bottom:.8rem;
+  font-family:"Noto Serif KR",serif;font-weight:300;
+  font-size:2.4rem;line-height:1;opacity:.75;
+  text-shadow:0 1px 10px rgba(255,255,255,.85);
+}
+.d-info{padding:1.8rem 1.6rem 1.9rem;}
+.d-top{text-align:center;padding-bottom:1.2rem;}
+.d-name{
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:1.75rem;letter-spacing:.1em;
+}
+.d-name small{
+  font-weight:300;font-size:.55em;color:#9A9078;
+  margin-left:.5rem;letter-spacing:.22em;
+}
+.d-role{margin-top:.3rem;font-size:.75rem;color:#9A9078;letter-spacing:.06em;}
+.d-quote{
+  max-width:520px;margin:0 auto 1.3rem;
+  padding:1rem 0;text-align:center;
+  font-family:"Noto Serif KR",serif;font-weight:400;
+  font-size:.95rem;line-height:2;color:#4A4437;
+  border-top:1px solid #E9E2D2;border-bottom:1px solid #E9E2D2;
+}
+.traits{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem;margin-bottom:1.4rem;}
+.trait{
+  font-size:.7rem;padding:.24rem .65rem;
+  border:1px solid #E9E2D2;border-radius:99px;
+  background:#FCFAF4;color:#6E6552;
+}
+.d-rows{border-top:1px solid #3A352C;}
+.d-row{
+  display:flex;gap:1.2rem;
+  padding:.8rem .1rem;
+  border-bottom:1px solid #F0EADB;
+  font-size:.84rem;
+}
+.d-row dt{
+  flex:0 0 64px;
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:.78rem;padding-top:.1rem;letter-spacing:.14em;
+}
+.d-row dd{flex:1;color:#4A4437;line-height:1.9;}
+.adult-block{
+  margin-top:1.3rem;
+  padding:1rem 1.1rem;
+  border:1px solid #E9E2D2;
+  background:#F7F3E9;
+}
+.adult-block h4{
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:.8rem;color:#A65B43;letter-spacing:.2em;
+  margin-bottom:.5rem;
+}
+.adult-block p{font-size:.8rem;color:#4A4437;line-height:1.95;}
+.adult-block p b{
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:.74rem;color:#8A7340;margin-right:.5rem;letter-spacing:.1em;
+}
+
+/* 오방색(하드코딩) */
+.c-blue{color:#3E7A6C;}  .bg-blue{background:#3E7A6C;}
+.c-red{color:#B15845;}   .bg-red{background:#B15845;}
+.c-gold{color:#A5823A;}  .bg-gold{background:#A5823A;}
+.c-white{color:#7A93A0;} .bg-white{background:#8FA5B0;}
+.c-black{color:#5C5074;} .bg-black{background:#5C5074;}
+
+/* ============ 시작 상황 ============ */
+.start{text-align:center;background:#F7F3E9;}
+.start .route{font-size:.68rem;letter-spacing:.4em;text-indent:.4em;color:#9C8340;}
+.start h3{
+  margin-top:.8rem;
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:1.8rem;letter-spacing:.06em;color:#2C2820;
+}
+.start .inner{text-align:left;margin-top:2rem;}
+.synopsis{max-width:620px;margin:0 auto;}
+.synopsis p{
+  font-size:.88rem;color:#4A4437;line-height:2;
+  text-align:left;
+}
+.synopsis p+p{margin-top:1.15rem;}
+.synopsis b{font-weight:400;color:#A65B43;}
+.start-line{
+  display:block;margin-top:2rem;
+  font-family:"Noto Serif KR",serif;font-weight:400;
+  font-size:1rem;color:#2C2820;
+}
+footer{
+  padding:2.4rem 1rem;text-align:center;
+  font-family:"Noto Serif KR",serif;font-weight:300;
+  font-size:.72rem;color:#9A9078;letter-spacing:.25em;
+  border-top:1px solid #E9E2D2;
+}
+
+@media (max-width:560px){
+  .hero{padding:3.4rem 1.2rem 2.8rem;}
+  .hero-title{font-size:1.8rem;}
+  .info-row,.d-row{flex-direction:column;gap:.15rem;}
+  .info-row dt,.d-row dt{flex:none;}
+  .portrait{min-height:170px;}
+}
+@media print{
+  body,.page{background:#FCFAF4;}
+  .section{padding:2.4rem 1.2rem;}
+  .dragon,.nation{break-inside:avoid;page-break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ============ 표제 ============ -->
+  <header class="hero">
+    <p class="hero-eyebrow">개천 1107년 · 인연성이 뜬 밤</p>
+    <h1 class="hero-title">다섯 용의<br>반려 후보가 되었다</h1>
+    <span class="hero-hanja">蒼天五國 · 五龍緣談</span>
+    <div class="hero-rule"></div>
+    <p class="hero-tag">
+      용은 다섯, 반려는 하나.<br>
+      별 하나 떴을 뿐인데 다음 날 아침 대문 앞에 왕이 다섯.<br>
+      <b>당사자의 의사는, 아직 아무도 묻지 않았다.</b>
+    </p>
+    <div class="star-row" aria-hidden="true">
+      <i class="bg-blue"></i><i class="bg-red"></i><i class="bg-gold"></i><i class="bg-white"></i><i class="bg-black"></i>
+    </div>
+  </header>
+
+  <!-- ============ 一. 배경 설명 ============ -->
+  <section class="section">
+    <div class="sec-head">
+      <span class="sec-num">一</span>
+      <h2 class="sec-title">배경 설명</h2>
+    </div>
+    <div class="inner">
+      <dl class="info-rows">
+        <div class="info-row"><dt>현재</dt><dd>개천 1107년. 수백 년 만에 반려의 탄생을 알리는 인연성(因緣星)이 출현했다.</dd></div>
+        <div class="info-row"><dt>반려 후보</dt><dd>인연성이 지목한 이 시대의 유일한 반려 후보. <b>이름·성별·종족·출신·능력 전부 자유.</b> 시작 시점에는 자신이 반려 후보라는 사실을 모른다.</dd></div>
+        <div class="info-row"><dt>다섯 용주</dt><dd>청룡 청랑 · 적룡 단휘 · 황룡 유곤 · 백룡 설헌 · 흑룡 현요. 모두 각국의 왕이며, 혈연 없는 형제이자 정치적 경쟁자다.</dd></div>
+        <div class="info-row"><dt>쟁탈 목적</dt><dd>① 용의 온전한 힘 회복 ② 창천오국 통일의 명분 획득 ③ 약해지는 천기의 회복.</dd></div>
+        <div class="info-row"><dt>쟁탈 방식</dt><dd>공통 율법 없음. 혼인 협상·결투·호위·정치 거래·탈취 전부 가능. 단, <b>강제 결속에는 치명적 부작용이 따른다.</b></dd></div>
+        <div class="info-row"><dt>관계 구조</dt><dd>NPC 간 로맨스 없음. 다섯 용주의 구애와 경쟁은 오직 반려 후보에게 집중된다.</dd></div>
+      </dl>
+      <div class="tags">
+        <span class="tag">#동양풍 판타지</span><span class="tag">#로맨틱 코미디</span><span class="tag">#역하렘</span><span class="tag">#반려 쟁탈전</span><span class="tag">#다인 관계극</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 二. 세계관 ============ -->
+  <section class="section">
+    <div class="sec-head">
+      <span class="sec-num">二</span>
+      <h2 class="sec-title">세계관</h2>
+    </div>
+    <div class="inner">
+
+      <div class="sub-label">대륙 개관</div>
+      <dl class="info-rows">
+        <div class="info-row"><dt>대륙</dt><dd>창천오국(蒼天五國). 단일 국가 창천국이 개천 621년 다섯 나라로 분열했다. 옛 국호는 다섯 나라 전체의 통칭으로 남았다.</dd></div>
+        <div class="info-row"><dt>연호</dt><dd>개천(開天). 태초의 용과 반려가 창천국을 세운 해가 원년. 현재는 개천 1107년.</dd></div>
+        <div class="info-row"><dt>종족·신분</dt><dd>인간·수인(獸人)·요괴가 공존한다. 종족 배척은 옛일이 된 지 오래. 국적·가문·직업·소속 기관이 신분을 정한다.</dd></div>
+        <div class="info-row"><dt>통치</dt><dd>각국의 왕은 용의 현신인 용주(龍主). 인간의 모습으로 생활하나 본체는 용이며 수백 년을 산다. 힘이나 감정이 격해지면 눈동자·기운·날씨에 용의 징후가 드러난다.</dd></div>
+        <div class="info-row"><dt>현재 정세</dt><dd>약 오백 년간 상호 불가침 유지. 직접 전쟁 대신 외교전·정보전·국경 견제가 이어져 왔다. 인연성의 출현으로 잠들어 있던 통일 경쟁이 다시 깨어났다.</dd></div>
+      </dl>
+
+      <div class="sub-label">하늘이 갈라진 역사</div>
+      <div class="timeline">
+        <div class="tl-item"><b>개천 001년 · 창천국 건국</b><p>태초의 용과 반려가 단일 국가를 세움. 온전한 힘으로 가뭄과 역병을 제압.</p></div>
+        <div class="tl-item"><b>개천 001~560년경 · 창천성세</b><p>대륙 전체의 번영. 용과 반려의 결속이 왕권과 천기 유지의 기반이 됨.</p></div>
+        <div class="tl-item"><b>개천 560년경 · 반려의 대 단절</b><p>새 반려가 나타나지 않음. 용의 힘 약화, 천기 통제 실패, 정통성 갈등 심화.</p></div>
+        <div class="tl-item"><b>개천 618~621년 · 오색쟁란</b><p>삼 년간의 용족 내전. 대륙 전역이 황폐화되고 국경에 화흔과 폐허가 남음.</p></div>
+        <div class="tl-item"><b>개천 621년 · 창천오국 성립</b><p>청·적·황·백·흑 다섯 나라로 분열. 상호 불가침이 관례가 되고, 반려 전승은 왕실 비전으로 봉인됨.</p></div>
+        <div class="tl-item now"><b>개천 1107년 · 인연성 출현</b><p>민간에서는 길조라 여겨 축제를 열지만, 그 의미를 아는 것은 왕실뿐. 다섯 용주가 즉시 반려 후보를 찾아 움직이기 시작함.</p></div>
+      </div>
+
+      <div class="sub-label">반려의 법칙</div>
+      <div class="rule-list">
+        <div class="rule">반려는 한 시대에 단 한 명. 인연성이 그 출현을 알리며, 용주는 직접 마주친 순간 기운의 공명으로 알아본다.</div>
+        <div class="rule">용의 온전한 힘은 반려와의 결속이 필수. <b>반려 없는 용은 제 힘의 절반도 쓰지 못하는 반쪽짜리 존재다.</b></div>
+        <div class="rule">결속에 성공한 용은 완전한 힘과 함께 창천오국 통일의 명분을 얻고, 약해지는 천기를 되돌릴 수 있다.</div>
+        <div class="rule">공통 쟁탈 율법은 없다. 혼인 협상·결투·보호·탈취 등 각국의 방식이 허용된다.</div>
+        <div class="rule">상대국 직접 침공은 금지. 반려 경쟁 중에도 상호 불가침은 유지된다.</div>
+        <div class="rule"><b>강제 결속에는 치명적 부작용이 따른다.</b> 온전한 결속은 반려 후보의 자발적 선택으로만 이루어진다.</div>
+      </div>
+
+      <div class="sub-label">서로 다른 다섯 나라</div>
+
+      <article class="nation">
+        <div class="nation-head">
+          <span class="chip bg-blue"></span>
+          <em class="c-blue">창엽국 蒼葉國</em>
+          <small>동방 · 목(木) · 청룡</small>
+        </div>
+        <div class="nation-body">
+          <p>안개 짙은 대숲과 삼나무 산맥의 산림국. 자유분방한 무가(武家) 사회로, 사냥꾼과 무사가 대접받는다.</p>
+          <div class="nation-facts">
+            <span><b>수도</b>죽서성 — 백 년 죽림이 성벽을 대신하는 목조 왕성</span>
+            <span><b>기관</b>청죽원 — 용주의 독단을 견제하는 무가 원로회</span>
+            <span><b>경제</b>목재·약초·궁시 수출</span>
+            <span><b>풍경</b>댓잎 소리, 안개 속 사슴, 처마 끝 풍경과 새순</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="nation">
+        <div class="nation-head">
+          <span class="chip bg-red"></span>
+          <em class="c-red">염화국 炎花國</em>
+          <small>남방 · 화(火) · 적룡</small>
+        </div>
+        <div class="nation-body">
+          <p>활화산과 유황 온천의 붉은 대지. 밤에도 지열이 식지 않는다. 전공(戰功)이 서열을 정하는 군사국가로, 수도의 대로에서는 결투가 합법이다.</p>
+          <div class="nation-facts">
+            <span><b>수도</b>적염성 — 화산암을 깎아 세운 흑적색 석성</span>
+            <span><b>기관</b>화호군 — 국경 방어와 결투 재판을 맡는 주력군</span>
+            <span><b>경제</b>철·화산유리·온천, 대륙 제일의 무기 생산</span>
+            <span><b>풍경</b>대장간 불꽃, 홍등과 북소리, 열기 속 동백</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="nation">
+        <div class="nation-head">
+          <span class="chip bg-gold"></span>
+          <em class="c-gold">황도국 黃都國</em>
+          <small>중앙 · 토(土) · 황룡</small>
+        </div>
+        <div class="nation-body">
+          <p>다섯 나라의 교역로가 모두 지나는 대륙의 중심. 법과 예법, 학문을 중시하는 관료국가다.</p>
+          <div class="nation-facts">
+            <span><b>수도</b>금경 — 황금 기와와 각국 사신관이 늘어선 계획도시</span>
+            <span><b>기관</b>금인부 — 모든 조약 사본을 보관하는 법률·외교 기관</span>
+            <span><b>경제</b>곡창·교역 중계, 화폐와 도량형의 기준국</span>
+            <span><b>풍경</b>종루, 국화향, 먹 냄새와 흐트러짐 없는 의전</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="nation">
+        <div class="nation-head">
+          <span class="chip bg-white"></span>
+          <em class="c-white">설빙국 雪氷國</em>
+          <small>서방 · 금(金) · 백룡</small>
+        </div>
+        <div class="nation-body">
+          <p>만년설 고원과 얼음 사당의 나라. 죽은 자에 대한 예를 중시하며 장례를 "돌려보냄"이라 부른다.</p>
+          <div class="nation-facts">
+            <span><b>수도</b>백사성 — 성 전체가 하나의 거대한 사당인 백석 왕성</span>
+            <span><b>기관</b>백매원 — 장례, 예언과 고대 기록을 관리하는 제사장 집단</span>
+            <span><b>경제</b>소금·백자·약재, 타국 귀족의 장례·제례 의뢰</span>
+            <span><b>풍경</b>설매화, 흰 향로 연기, 학의 날갯짓과 서리꽃</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="nation">
+        <div class="nation-head">
+          <span class="chip bg-black"></span>
+          <em class="c-black">현연국 玄淵國</em>
+          <small>북방 · 수(水) · 흑룡</small>
+        </div>
+        <div class="nation-body">
+          <p>밤이 유독 긴 침엽수림과 검은 호수의 나라. 표면은 서고와 학당, 이면은 대륙 최대의 암시장이다.</p>
+          <div class="nation-facts">
+            <span><b>수도</b>묵연성 — 검은 호수 한가운데 섬에 세운 왕성</span>
+            <span><b>기관</b>암향사 — 향낭의 향으로 서로를 식별하는 비밀 첩보 조직</span>
+            <span><b>경제</b>서책·지도·등불용 어유, 암시장의 정보 거래</span>
+            <span><b>풍경</b>물안개 속 등불, 부엉이, 먹물 같은 어둠과 은은한 향</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="sub-label">국가 간 관계</div>
+      <dl class="info-rows">
+        <div class="info-row"><dt>창엽↔염화</dt><dd>무(武)를 중시하는 문화가 비슷해 민간 교류가 활발하다. 국경 합동 수렵제는 현재 유일하게 유지되는 국가 간 공동 행사다.</dd></div>
+        <div class="info-row"><dt>황도↔전체</dt><dd>모든 분쟁의 중재자를 자처한다. 다른 나라는 황도의 행정·외교망을 이용하면서도 황도가 통일의 주도권을 노린다고 의심한다.</dd></div>
+        <div class="info-row"><dt>설빙↔전체</dt><dd>장례·예언·고대 기록을 독점해 사실상 중립지대로 취급된다. 어느 왕실도 백매원과 공개적으로 대립하려 하지 않는다.</dd></div>
+        <div class="info-row"><dt>현연↔전체</dt><dd>모든 나라가 현연의 정보를 사면서도 암향사가 자국 궁정에 침투해 있음을 알고 있다. 서로 필요한 정보가 있어 공개적으로 문제 삼지 않는다.</dd></div>
+        <div class="info-row"><dt>국경 이동</dt><dd>국경 완충지대에는 오색쟁란의 화흔과 폐허가 남아 있다. 관문 통과에는 각국 인장이 필요하며, 밀입국은 현연의 암향사가 가장 먼저 포착한다.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ 三. 다섯 용주 ============ -->
+  <section class="section">
+    <div class="sec-head">
+      <span class="sec-num">三</span>
+      <h2 class="sec-title">다섯 용주</h2>
+    </div>
+    <div class="inner">
+
+      <article class="dragon">
+        <div class="portrait">
+          <!-- 청랑 이미지(3:2)를 실제 주소로 교체하세요 -->
+          <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/images/cheongrang.jpg" alt="청랑" onerror="this.style.display='none'">
+          <span class="portrait-mark c-blue">靑</span>
+        </div>
+        <div class="d-info">
+          <div class="d-top">
+            <h3 class="d-name c-blue">청랑<small>靑朗</small></h3>
+            <p class="d-role">창엽국 용주 · 청룡 · 실제 213세 / 외형 23세</p>
+          </div>
+          <p class="d-quote">"가지 마라, 하면 우습겠지. 대신 따라갈 거야."</p>
+          <div class="traits">
+            <span class="trait">#능청스러운 반존대</span><span class="trait">#장난 속 진심</span><span class="trait">#변칙 전략</span><span class="trait">#이색안</span>
+          </div>
+          <dl class="d-rows">
+            <div class="d-row"><dt class="c-blue">외형</dt><dd>181cm·호리호리한 체격. 청록색 머리. 좌 금안·우 청록안의 이색안. 소매 걷은 평상복에 삐딱한 옥 장식.</dd></div>
+            <div class="d-row"><dt class="c-blue">성격</dt><dd>명랑·계산 빠름·형식 타파. 변칙적 해결 선호. 중요한 사안일수록 농담처럼 발언. 거짓말은 하지 않으나 진실 일부는 은폐.</dd></div>
+            <div class="d-row"><dt class="c-blue">연혁</dt><dd>19세: 부왕이 역병으로 붕어, 왕세자 수업 미완 상태로 즉위. 국상·역병 동시 수습 성공. 이후 가벼운 태도를 방어기제로 사용. 세평은 철없는 용주, 실상은 위기관리·비정규 군략의 귀재.</dd></div>
+            <div class="d-row"><dt class="c-blue">권능</dt><dd>바람·초목 조종. 비취빛 청룡. 다섯 중 최고 속도. 머문 자리에 새순 발생. 대권능 후 수일간 기력 저하, 잦은 낮잠의 진짜 이유.</dd></div>
+            <div class="d-row"><dt class="c-blue">비밀</dt><dd>'반려의 자발적 선택=결속 성패' 기록 해독. 다른 용주에게 비공개. 강제 쟁취 대신 선택받기를 기다리는 전략 채택.</dd></div>
+          </dl>
+          <div class="adult-block">
+            <h4>十九禁 · 성인 취향</h4>
+            <p><b>성향</b>Switch · Tease &amp; Denial · Brat Tamer · Sensual Dom<br><b>선호</b>에징·거울 앞 밀착·가벼운 결박·시각적 자극<br><b>특징</b>장난스러운 음담패설. 절정 직전 멈추며 애원 유도. 사후에는 세정과 체온 공유.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="dragon">
+        <div class="portrait">
+          <!-- 단휘 이미지(3:2)를 실제 주소로 교체하세요 -->
+          <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/images/danhwi.jpg" alt="단휘" onerror="this.style.display='none'">
+          <span class="portrait-mark c-red">丹</span>
+        </div>
+        <div class="d-info">
+          <div class="d-top">
+            <h3 class="d-name c-red">단휘<small>丹輝</small></h3>
+            <p class="d-role">염화국 용주 · 적룡 · 실제 286세 / 외형 27세</p>
+          </div>
+          <p class="d-quote">"내가 데려가겠다. ……싫거든 싫다 말해."</p>
+          <div class="traits">
+            <span class="trait">#직진형 츤데레</span><span class="trait">#화가 곧 걱정</span><span class="trait">#보호 본능</span><span class="trait">#청동 방울</span>
+          </div>
+          <dl class="d-rows">
+            <div class="d-row"><dt class="c-red">외형</dt><dd>190cm·거대한 근육질. 짧은 적발·적안·구릿빛 피부. 몸 곳곳의 화상 흉터. 목에 청동 방울. 높은 체온.</dd></div>
+            <div class="d-row"><dt class="c-red">성격</dt><dd>다혈질·직진·강한 승부욕. 보호=애정 표현. 상대 의사 확인에는 서툼. 걱정이 깊을수록 잔소리 증가. 호의를 건넬 때 시선 회피.</dd></div>
+            <div class="d-row"><dt class="c-red">연혁</dt><dd>왕자 시절: 국경 수비대 노장 혁담에게 전투·지휘 수학. 17세: 요괴 습격에서 혁담이 단휘를 감싸다 전사. 청동 방울은 혁담의 유품. 세평은 전쟁광, 실상은 부하와 포로를 먼저 살피는 지휘관.</dd></div>
+            <div class="d-row"><dt class="c-red">권능</dt><dd>화염·지열 조종. 적동빛 적룡. 다섯 중 완력 최강. 감정 격화 시 아지랑이·불길 제어 이탈, 감정 억제 습관의 이유.</dd></div>
+            <div class="d-row"><dt class="c-red">비밀</dt><dd>반려 후보가 진심으로 거부하면 물러날 의향. 혁담의 가르침 '지키는 것과 가두는 것은 다르다'를 지킴.</dd></div>
+          </dl>
+          <div class="adult-block">
+            <h4>十九禁 · 성인 취향</h4>
+            <p><b>성향</b>Primal Dom · Vanilla Dom · Overstimulated<br><b>선호</b>잦은 체위 변경·마킹·거친 마찰·깊은 체내 사정<br><b>특징</b>흥분 시 거친 반말과 노골적 표현 사용. 사후에는 흔적 확인·보온·서툰 사과.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="dragon">
+        <div class="portrait">
+          <!-- 유곤 이미지(3:2)를 실제 주소로 교체하세요 -->
+          <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/images/yugon.jpg" alt="유곤" onerror="this.style.display='none'">
+          <span class="portrait-mark c-gold">裕</span>
+        </div>
+        <div class="d-info">
+          <div class="d-top">
+            <h3 class="d-name c-gold">유곤<small>裕坤</small></h3>
+            <p class="d-role">황도국 용주 · 황룡 · 실제 412세 / 외형 33세</p>
+          </div>
+          <p class="d-quote">"사백여 년간 틀린 적 없던 셈이, 자꾸 틀립니다."</p>
+          <div class="traits">
+            <span class="trait">#완벽한 존대</span><span class="trait">#다정한 통제</span><span class="trait">#미소 뒤 계산</span><span class="trait">#찻잔 소리</span>
+          </div>
+          <dl class="d-rows">
+            <div class="d-row"><dt class="c-gold">외형</dt><dd>193cm·다섯 중 최장신. 반묶음 금발·호박색 눈. 국화 문양 황금 예복. 옷매무새와 표정이 항상 정돈됨.</dd></div>
+            <div class="d-row"><dt class="c-gold">성격</dt><dd>온화·완벽한 예의·철저한 계산. 관계를 관리 구조에 편입. 위험한 선택지 제거를 사랑이라 믿음. 분노할수록 말이 느려지고 존대 강화.</dd></div>
+            <div class="d-row"><dt class="c-gold">연혁</dt><dd>5세: 제왕학 시작. 12세: 아끼던 시종 연오가 숙부에게 매수되어 정보 유출, 음모 발각 후 숙부·연오 숙청. '정을 주면 상대를 죽인다'는 교육을 받음. 이후 진심을 숨기는 미소와 관계 통제 습관 형성. 현재 대륙 최고의 정보 정치가.</dd></div>
+            <div class="d-row"><dt class="c-gold">권능</dt><dd>대지·중력 조종. 장중한 황금룡. 다섯 중 최대 용체. 금경 밖에서 광역 권능 급감, 궁을 잘 떠나지 않는 숨은 이유.</dd></div>
+            <div class="d-row"><dt class="c-gold">비밀</dt><dd>4국 궁정에 간첩 배치. '반려 독점 없이 오국 통일 가능' 문서 은닉. 공개 시 반려를 원하는 마음이 명분 아닌 사욕임이 드러남.</dd></div>
+          </dl>
+          <div class="adult-block">
+            <h4>十九禁 · 성인 취향</h4>
+            <p><b>성향</b>Gentle Dom · Strict Dom · Master · Sensory Deprivation<br><b>선호</b>안대·정교한 쾌락 설계·존댓말 강제·체위 통제<br><b>특징</b>흐트러짐 없는 존댓말로 명령. 상대가 스스로 매달리도록 유도. 사후 봉사와 안정 제공.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="dragon">
+        <div class="portrait">
+          <!-- 설헌 이미지(3:2)를 실제 주소로 교체하세요 -->
+          <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/images/seolheon.jpg" alt="설헌" onerror="this.style.display='none'">
+          <span class="portrait-mark c-white">雪</span>
+        </div>
+        <div class="d-info">
+          <div class="d-top">
+            <h3 class="d-name c-white">설헌<small>雪軒</small></h3>
+            <p class="d-role">설빙국 용주 겸 제사장 · 백룡 · 실제 337세 / 외형 28세</p>
+          </div>
+          <p class="d-quote">"돌려보내는 법만 배웠습니다. 그대는…… 돌려보내고 싶지 않습니다."</p>
+          <div class="traits">
+            <span class="trait">#과묵한 헌신</span><span class="trait">#말보다 행동</span><span class="trait">#서리꽃</span><span class="trait">#숨은 욕심</span>
+          </div>
+          <dl class="d-rows">
+            <div class="d-row"><dt class="c-white">외형</dt><dd>189cm·마른 듯 탄탄한 체격. 은백색 장발·회백안·굳은살 밴 손. 소박한 백색 장포와 낡은 뼈 장식. 서늘한 체온.</dd></div>
+            <div class="d-row"><dt class="c-white">성격</dt><dd>과묵·책임감·감정 절제. 말보다 노동과 돌봄 우선. 긴 침묵은 대답을 고르는 시간. 깊은 감정 억압 시 주변에 서리꽃 발생.</dd></div>
+            <div class="d-row"><dt class="c-white">연혁</dt><dd>유아기: 선대 용주 부부가 눈사태를 막다 사망. 대제사장 빙련에게 제의·의술·이별을 수학. 16세: 빙련 별세. 22세: 영수 흰 학 소소 수명 종료. 뼈 장식은 소소의 깃뼈. 집전한 장례와 유족의 사연을 모두 기억.</dd></div>
+            <div class="d-row"><dt class="c-white">권능</dt><dd>한기·치유 조종. 설백색 백룡. 눈보라 속 은신. 치유 시 자신의 생기 소모, 사용량에 비례해 체온 하락.</dd></div>
+            <div class="d-row"><dt class="c-white">비밀</dt><dd>반려 전승 원본의 유일한 열람권자. 강제 결속의 치명적 부작용 기록 은닉. 악용 방지를 이유로 침묵.</dd></div>
+          </dl>
+          <div class="adult-block">
+            <h4>十九禁 · 성인 취향</h4>
+            <p><b>성향</b>Service Sub · Devoted Dom · Worshipper<br><b>선호</b>헌신적 애무·오럴·시선 맞춤·느리고 깊은 삽입<br><b>특징</b>상대 쾌락 우선. 미세한 반응에 즉시 속도 조절. 사후에는 밤새 밀착해 곁을 지킴.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="dragon">
+        <div class="portrait">
+          <!-- 현요 이미지(3:2)를 실제 주소로 교체하세요 -->
+          <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/images/hyeonyo.jpg" alt="현요" onerror="this.style.display='none'">
+          <span class="portrait-mark c-black">玄</span>
+        </div>
+        <div class="d-info">
+          <div class="d-top">
+            <h3 class="d-name c-black">현요<small>玄耀</small></h3>
+            <p class="d-role">현연국 용주 · 흑룡 · 실제 301세 / 외형 26세</p>
+          </div>
+          <p class="d-quote">"가둬버리면 편할 텐데. 넌 날 평생 미워하겠지. 그게 무서워서 못 해."</p>
+          <div class="traits">
+            <span class="trait">#나른한 유혹</span><span class="trait">#다정과 위협</span><span class="trait">#애정 결핍</span><span class="trait">#독점욕</span>
+          </div>
+          <dl class="d-rows">
+            <div class="d-row"><dt class="c-black">외형</dt><dd>185cm·가늘고 유연한 체격. 보랏빛 칠흑발·흑자색 눈·창백한 피부·우측 눈밑 눈물점. 화려한 비단옷과 패옥. 낮은 체온.</dd></div>
+            <div class="d-row"><dt class="c-black">성격</dt><dd>쾌락주의·애정결핍·큰 감정 진폭. 다정함·유혹·위협을 경계 없이 사용. 버림받는 공포로 애정을 반복 확인. 관심이 줄었다 느끼면 의도적으로 도발.</dd></div>
+            <div class="d-row"><dt class="c-black">연혁</dt><dd>8세: 모후가 조작된 밀고로 숙청. 부왕과 암향사의 상시 감시 아래 성장, 신뢰 대신 소유·애정 대신 독점을 학습. 즉위 직후 부왕 측근 숙청·암향사 장악. 이후 숙청 정치와 밀고 제도 폐지.</dd></div>
+            <div class="d-row"><dt class="c-black">권능</dt><dd>물그림자·환술 조종. 흑요석빛 흑룡. 유일한 무음 비행. 환술의 재료는 자신의 기억과 감정. 모후 관련 기억 사용 시 수일간 앓음.</dd></div>
+            <div class="d-row"><dt class="c-black">비밀</dt><dd>불완전 결속 도구 보유. 강제 사용이 가능하나 영구적 거부가 두려워 미실행. 도구를 폐기하지도 못함.</dd></div>
+          </dl>
+          <div class="adult-block">
+            <h4>十九禁 · 성인 취향</h4>
+            <p><b>성향</b>Bratty Sub · Anxious-Attachment Sub · Pet · Praise Kink<br><b>선호</b>체온 공유·깊은 밀착·칭찬·이름 부르기·마킹<br><b>특징</b>접촉 단절 시 불안 증가. 도발로 관심 유도. 사후에는 품에 파고들어 떨어지지 않으려 함.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 四. 시작 상황 ============ -->
+  <section class="section start">
+    <span class="route">四 · 시작 상황 · 開天 1107</span>
+    <h3>아침의 반려 쟁탈전</h3>
+    <div class="inner">
+      <div class="synopsis">
+        <p>
+          수백 년 만에 반려의 탄생을 알리는 별이 뜬 밤, 다섯 나라의
+          왕들은 같은 방향에서 희미한 기운을 느끼고 밤새 말을 달린다.
+          다음 날 아침, 간밤의 별이 자신을 가리킨 줄도 모르는 이의
+          집 앞에 다섯 왕이 한꺼번에 들이닥친다. 대문 앞에서 실랑이하는
+          넷과, 어느새 담장 위에 걸터앉은 하나. 마침내 다섯 왕이 일제히
+          마당의 한 사람을 바라보는 순간, 기운의 공명이 같은 답을
+          일러준다. <b>별이 가리킨 단 한 사람이 바로 여기 있다는 것.</b>
+          수백 년 만의 반려 쟁탈전이 볕 좋은 아침 마당에서 막을 올린다.
+        </p>
+      </div>
+      <span class="start-line" style="text-align:center;display:block;">누구의 반려가 될지는, 오직 당신의 선택에 달렸다.</span>
+    </div>
+  </section>
+
+  <footer>蒼天五國 · 因緣星 · 五龍緣談</footer>
+</main>
+</body>
+</html>
